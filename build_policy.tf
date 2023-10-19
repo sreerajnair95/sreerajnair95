@@ -10,8 +10,8 @@ terraform {
 provider "prismacloud" {
   # Configuration options
   url = api2.prismacloud.io
-  username = a05ac833-dd4d-4f39-851e-4c22d4615e94
-  password = GOeyZmpaX2DwhJVwKUI6Z6uy2TE=
+  username = 
+  password = 
 }
 
 resource "prismacloud_policy" "schwab-test5" {
