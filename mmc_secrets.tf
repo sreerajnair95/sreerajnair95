@@ -9,7 +9,15 @@ resource "azurerm_resource_group" "rg" {
   name     = "TerraformTesting"
   location = "eastus"
   tags = {
-    yor_trace = "25f69b44-1a6c-45dc-8243-2acb9151901f"
+    yor_trace            = "25f69b44-1a6c-45dc-8243-2acb9151901f"
+    git_commit           = "b2fb7c4e142d9d9e86c331f47f532a319d9b339c"
+    git_file             = "mmc_secrets.tf"
+    git_last_modified_at = "2023-05-01 06:53:06"
+    git_last_modified_by = "87660195+sreerajnair95@users.noreply.github.com"
+    git_modifiers        = "87660195+sreerajnair95"
+    git_org              = "sreerajnair95"
+    git_repo             = "sreerajnair95"
+    yor_name             = "rg"
   }
 }
 
@@ -19,7 +27,15 @@ resource "azurerm_availability_set" "DemoAset" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   tags = {
-    yor_trace = "cb7b0ddd-b38f-48cf-b512-ff5c1141bae1"
+    yor_trace            = "cb7b0ddd-b38f-48cf-b512-ff5c1141bae1"
+    git_commit           = "b2fb7c4e142d9d9e86c331f47f532a319d9b339c"
+    git_file             = "mmc_secrets.tf"
+    git_last_modified_at = "2023-05-01 06:53:06"
+    git_last_modified_by = "87660195+sreerajnair95@users.noreply.github.com"
+    git_modifiers        = "87660195+sreerajnair95"
+    git_org              = "sreerajnair95"
+    git_repo             = "sreerajnair95"
+    yor_name             = "DemoAset"
   }
 }
 
@@ -30,7 +46,15 @@ resource "azurerm_virtual_network" "vnet" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   tags = {
-    yor_trace = "c999f24e-e230-4ab3-a8dd-ce386069066b"
+    yor_trace            = "c999f24e-e230-4ab3-a8dd-ce386069066b"
+    git_commit           = "b2fb7c4e142d9d9e86c331f47f532a319d9b339c"
+    git_file             = "mmc_secrets.tf"
+    git_last_modified_at = "2023-05-01 06:53:06"
+    git_last_modified_by = "87660195+sreerajnair95@users.noreply.github.com"
+    git_modifiers        = "87660195+sreerajnair95"
+    git_org              = "sreerajnair95"
+    git_repo             = "sreerajnair95"
+    yor_name             = "vnet"
   }
 }
 
@@ -54,7 +78,15 @@ resource "azurerm_network_interface" "example" {
     private_ip_address_allocation = "Dynamic"
   }
   tags = {
-    yor_trace = "291a5840-3d43-4005-adce-4360d8690f80"
+    yor_trace            = "291a5840-3d43-4005-adce-4360d8690f80"
+    git_commit           = "b2fb7c4e142d9d9e86c331f47f532a319d9b339c"
+    git_file             = "mmc_secrets.tf"
+    git_last_modified_at = "2023-05-01 06:53:06"
+    git_last_modified_by = "87660195+sreerajnair95@users.noreply.github.com"
+    git_modifiers        = "87660195+sreerajnair95"
+    git_org              = "sreerajnair95"
+    git_repo             = "sreerajnair95"
+    yor_name             = "example"
   }
 }
 
@@ -83,6 +115,14 @@ resource "azurerm_windows_virtual_machine" "example" {
     version   = "latest"
   }
   tags = {
-    yor_trace = "a8077e3a-f8e6-4b2c-83be-5dba53acbed8"
+    yor_trace            = "a8077e3a-f8e6-4b2c-83be-5dba53acbed8"
+    git_commit           = "b2fb7c4e142d9d9e86c331f47f532a319d9b339c"
+    git_file             = "mmc_secrets.tf"
+    git_last_modified_at = "2023-05-01 06:53:06"
+    git_last_modified_by = "87660195+sreerajnair95@users.noreply.github.com"
+    git_modifiers        = "87660195+sreerajnair95"
+    git_org              = "sreerajnair95"
+    git_repo             = "sreerajnair95"
+    yor_name             = "example"
   }
 }
