@@ -8,6 +8,9 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name     = "TerraformTesting"
   location = "eastus"
+  tags = {
+    yor_trace = "25f69b44-1a6c-45dc-8243-2acb9151901f"
+  }
 }
 
 ## <https://www.terraform.io/docs/providers/azurerm/r/availability_set.html>
@@ -15,6 +18,9 @@ resource "azurerm_availability_set" "DemoAset" {
   name                = "example-aset"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
+  tags = {
+    yor_trace = "cb7b0ddd-b38f-48cf-b512-ff5c1141bae1"
+  }
 }
 
 ## <https://www.terraform.io/docs/providers/azurerm/r/virtual_network.html>
@@ -23,6 +29,9 @@ resource "azurerm_virtual_network" "vnet" {
   address_space       = ["10.0.0.0/16"]
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
+  tags = {
+    yor_trace = "c999f24e-e230-4ab3-a8dd-ce386069066b"
+  }
 }
 
 ## <https://www.terraform.io/docs/providers/azurerm/r/subnet.html> 
@@ -43,6 +52,9 @@ resource "azurerm_network_interface" "example" {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.subnet.id
     private_ip_address_allocation = "Dynamic"
+  }
+  tags = {
+    yor_trace = "291a5840-3d43-4005-adce-4360d8690f80"
   }
 }
 
@@ -69,5 +81,8 @@ resource "azurerm_windows_virtual_machine" "example" {
     offer     = "WindowsServer"
     sku       = "2016-Datacenter"
     version   = "latest"
+  }
+  tags = {
+    yor_trace = "a8077e3a-f8e6-4b2c-83be-5dba53acbed8"
   }
 }
