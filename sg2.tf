@@ -20,6 +20,8 @@ resource "aws_security_group" "allow_tls2_0" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name      = "allow_tls"
+    yor_name  = "allow_tls2_0"
+    yor_trace = "3aae13a2-7efa-4e5d-bc33-1523e5431134"
   }
 }
