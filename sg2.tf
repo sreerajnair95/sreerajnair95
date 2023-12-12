@@ -30,5 +30,6 @@ resource "aws_security_group" "allow_tls2_0" {
     git_modifiers        = "87660195+sreerajnair95"
     git_org              = "sreerajnair95"
     git_repo             = "sreerajnair95"
+    nikhil               = "owneremail.address.test.com"
   }
 }
