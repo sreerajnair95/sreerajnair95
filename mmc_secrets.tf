@@ -18,6 +18,7 @@ resource "azurerm_resource_group" "rg" {
     git_org              = "sreerajnair95"
     git_repo             = "sreerajnair95"
     yor_name             = "rg"
+    nikhil               = "owneremail.address.test.com"
   }
 }
 
@@ -36,6 +37,7 @@ resource "azurerm_availability_set" "DemoAset" {
     git_org              = "sreerajnair95"
     git_repo             = "sreerajnair95"
     yor_name             = "DemoAset"
+    nikhil               = "owneremail.address.test.com"
   }
 }
 
@@ -55,6 +57,7 @@ resource "azurerm_virtual_network" "vnet" {
     git_org              = "sreerajnair95"
     git_repo             = "sreerajnair95"
     yor_name             = "vnet"
+    nikhil               = "owneremail.address.test.com"
   }
 }
 
@@ -87,6 +90,7 @@ resource "azurerm_network_interface" "example" {
     git_org              = "sreerajnair95"
     git_repo             = "sreerajnair95"
     yor_name             = "example"
+    nikhil               = "owneremail.address.test.com"
   }
 }
 
@@ -124,5 +128,6 @@ resource "azurerm_windows_virtual_machine" "example" {
     git_org              = "sreerajnair95"
     git_repo             = "sreerajnair95"
     yor_name             = "example"
+    nikhil               = "owneremail.address.test.com"
   }
 }
